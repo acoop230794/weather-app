@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manc Weather</title>
+</head>
+<body>
+    <div class='app1'>
+        <form action="/displayManForecast" method='GET'>
+            
+            <h1>Manchester</h1>
+            <h2>United Kingdom</h2>
+            {{!-- <h3>Today: {{current}}</h3>
+            <img src="http://openweathermap.org/img/wn/{{currentIcon}}@2x.png" alt="Weather" id='weather' class='currentImg current'/> --}}
+            
+            <div class='column'>
+                <h2>Day 1</h2> 
+                <h2>{{day1}}</h2>  
+                <h2>{{day1Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d1icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 2</h2> 
+                <h2>{{day2}}</h2>  
+                <h2>{{day2Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d2icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 3</h2> 
+                <h2>{{day3}}</h2>  
+                <h2>{{day3Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d3icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 4</h2> 
+                <h2>{{day4}}</h2>  
+                <h2>{{day4Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d4icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 5</h2> 
+                <h2>{{day5}}</h2>  
+                <h2>{{day5Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d5icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 6</h2> 
+                <h2>{{day6}}</h2>  
+                <h2>{{day6Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d6icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+            <div class='column'>
+                <h2>Day 7</h2> 
+                <h2>{{day7}}</h2>  
+                <h2>{{day7Weather}}</h2>
+                <img src="http://openweathermap.org/img/wn/{{d7icon}}@2x.png" alt="Weather" id='weather' onerror="this.style.display='none'"/>
+            </div>
+
+            <br />
+            <button class='btn' type="submit">Get Weather</button>
+        </form>
+        <footer>
+            <a href='./forecast2'>Bocas Del Toro Weather</a>
+            <br />
+            <a href='./'><img class='home' src="./home.svg" /></a>
+        </footer>
+    </div>
+</body>
+</html>
